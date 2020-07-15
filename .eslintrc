@@ -14,6 +14,11 @@
             "vars": "local",
             "args": "none"
         }],
-        "no-undef": [1]
-    },
+        "no-undef": [1],
+        "tabWidth": 4,
+        "template-curly-spacing": "off",
+        "spaced-comment": 0,
+        "comma-dangle": [0, "never"],
+        "indent": [2, 4]
+    }
 }
