@@ -30,7 +30,7 @@ module.exports = appInfo => {
     // domainWhiteList: ['http://localhost:8080']
   };
   config.cors = {
-    origin: '*',//匹配规则  域名+端口  *则为全匹配
+    origin: '*', //匹配规则  域名+端口  *则为全匹配
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
   };
   return {
