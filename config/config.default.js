@@ -30,8 +30,22 @@ module.exports = appInfo => {
     // domainWhiteList: ['http://localhost:8080']
   };
   config.cors = {
-    origin: '*',//匹配规则  域名+端口  *则为全匹配
-    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
+    origin: '*', // 匹配规则  域名+端口  *则为全匹配
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+  };
+  config.mysql = {
+    client: {
+      // host
+      host: '127.0.0.1',
+      // 端口号
+      port: '3306',
+      // 用户名
+      user: 'root',
+      // 密码
+      password: '1314521a',
+      // 数据库名
+      database: 'eggtest',
+    },
   };
   return {
     ...config,
