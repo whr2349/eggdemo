@@ -1,8 +1,9 @@
-'use strict';
+
 
 const Controller = require('../core/base_controller');
 
 class AccontController extends Controller {
+
   async account() {
     const { ctx } = this;
     const name = ctx.request.body.loginname;
@@ -11,6 +12,15 @@ class AccontController extends Controller {
     this.success(res);
     
   }
+
+    async account() {
+        const { ctx } = this;
+        const name = ctx.request.body.loginname;
+        const pwd = ctx.request.body.password;
+        console.log(pwd)
+        console.log(ctx.request.body)
+    }
+
 }
 
 module.exports = AccontController;

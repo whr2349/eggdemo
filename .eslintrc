@@ -1,17 +1,24 @@
 {
-  "extends": "eslint-config-egg",
-  "rules": {
-    "arrow-parens": 0,
-    "generator-star-spacing": 0,
-    "no-unused-vars": [1, {
-      "vars": "local",
-      "args": "none"
-    }],
-    // 关闭语句强制分号结尾
-    "semi": [0],
-    //空行最多不能超过100行
-    "no-multiple-empty-lines": [0, {"max": 100}],
-    //关闭禁止混用tab和空格
-    "no-mixed-spaces-and-tabs": [0]
-  }
+    "extends": "eslint-config-egg",
+    "rules": {
+        // for variables in jsx
+        // see https://github.com/eslint/eslint/issues/6274
+        "generator-star-spacing": "off",
+        "babel/generator-star-spacing": "off",
+        "no-mixed-spaces-and-tabs": [0],
+        "no-multiple-empty-lines": [0, {
+            "max": 100
+        }],
+        "semi": [0],
+        "no-unused-vars": [1, {
+            "vars": "local",
+            "args": "none"
+        }],
+        "no-undef": [1],
+        "tabWidth": 4,
+        "template-curly-spacing": "off",
+        "spaced-comment": 0,
+        "comma-dangle": [0, "never"],
+        "indent": 0
+    }
 }
